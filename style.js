@@ -409,7 +409,7 @@ if(localStorage.getItem('finished') === null) {
         }
         else if(localStorage.getItem('question') == 'education') {
             //write some code here or create and call a function
-            arrayThatKeepsTrackOfUsersCurrentData = arrayThatKeepsTrackOfUsersCurrentData.slice(0, 7 + (parseInt(localStorage.getItem('num_of_exes')) *2) + 1)
+            arrayThatKeepsTrackOfUsersCurrentData = arrayThatKeepsTrackOfUsersCurrentData.slice(0, 7 + (parseInt(localStorage.getItem('num_of_exes')) *2))
             question.innerText = q_txt_edu
             education()
         } else if(localStorage.getItem('question') == 'languages') {
